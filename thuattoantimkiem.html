@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function phoneNumber(arr) {
+            express = /^0(9[678]|16[23456789])[0-9]{7}$/
+            let arrNumber = [];
+
+            for(let i = 0; i < arr.length; i ++) {
+                if(express.test(arr[i])) {
+                    arrNumber.push(arr[i])
+                }
+            }
+
+            console.log(arrNumber)
+        }
+
+        let arr = new Array("0981232345","0981232348","01671232345","0651232345","0911232345","01601232345")
+        console.log(arr)
+
+        phoneNumber(arr)
+
+    </script>
+</body>
+</html>
